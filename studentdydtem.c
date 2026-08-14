@@ -49,8 +49,10 @@ typedef struct student {
       while (po != NULL ){
          while( pre != NULL){
 	   if (pre->name == po->name ){
-	 * ( names+i) =*( po->name) ;
+		   for (int k =0;k<=19;k++){
+	 * ( names+i) = po->name[k] ;
 	   i++;
+		   }
 	   break ; 
 	   }else{
 	      pre=pre->next;
@@ -61,7 +63,8 @@ typedef struct student {
       po = po->next ;
       }
       for (int l=0;l<=999;l++){
-      printf ("this name have a doble%s ",names+l);
-      }
+	      for (int m =l;m<=19;m++){
+      printf ("this name have a doble%s ",names+m);
+      }}
       }
       }
