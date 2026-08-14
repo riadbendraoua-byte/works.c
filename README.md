@@ -1,1 +1,1 @@
-some random programs by c language 
+some random programs written in C
