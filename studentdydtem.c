@@ -37,10 +37,31 @@ typedef struct student {
 	  free(pnow);
 	  printf ("operation reussite ");
 	  }//if2
-      }//if
+      }//i
+       
       void duplicate (postudent tete ) {
       postudent po,pre;
       po=tete;
+      char* names ;
+      int i = 0 ;
       po=po->next;
+      pre = po->next;
+      while (po != NULL ){
+         while( pre != NULL){
+	   if (pre->name == po->name ){
+	 * ( names+i) =*( po->name) ;
+	   i++;
+	   break ; 
+	   }else{
+	      pre=pre->next;
+	   
+	   }
+	 
+	 } 
+      po = po->next ;
+      }
+      for (int l=0;l<=999;l++){
+      printf ("this name have a doble%s ",names+l);
+      }
       }
       }
