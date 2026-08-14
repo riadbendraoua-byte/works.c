@@ -38,7 +38,9 @@ typedef struct student {
 	  printf ("operation reussite ");
 	  }//if2
       }//if
-      
-  
-  
-  }
+      void duplicate (postudent tete ) {
+      postudent po,pre;
+      po=tete;
+      po=po->next;
+      }
+      }
